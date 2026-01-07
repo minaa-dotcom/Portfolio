@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { AnimatedSection } from "../AnimatedSection";
 import { SectionHeading } from "../SectionHeading";
 import { Code2, Coffee, Rocket, Users } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const stats = [
   { icon: Code2, value: "50+", label: "Projects Completed" },
@@ -28,17 +29,12 @@ export const AboutSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl opacity-50" />
               
               {/* Main image container */}
-              <div className="relative aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    className="w-3/4 h-3/4 rounded-full border-2 border-dashed border-primary/30"
-                  />
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">👨‍💻</span>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden">
+                <img 
+                  src={profilePhoto} 
+                  alt="Profile photo"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </AnimatedSection>
