@@ -53,7 +53,7 @@ export const AboutSection = () => {
                 clean code and creative solutions.
               </p>
               <p>
-                Currently pursuing my degree in Computer Science, I've been fortunate to 
+                Currently pursuing my degree in software engineering, I've been fortunate to 
                 work on diverse projects ranging from web applications to mobile apps. 
                 I believe in continuous learning and staying updated with the latest 
                 technologies and best practices.
@@ -69,15 +69,15 @@ export const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div>
                 <span className="text-sm text-muted-foreground">Location</span>
-                <p className="font-medium">Your City, Country</p>
+                <p className="font-medium">Maya, Ethiopia</p>
               </div>
               <div>
                 <span className="text-sm text-muted-foreground">Education</span>
-                <p className="font-medium">B.S. Computer Science</p>
+                <p className="font-medium">B.S. software engineering</p>
               </div>
               <div>
                 <span className="text-sm text-muted-foreground">Email</span>
-                <p className="font-medium text-primary">hello@example.com</p>
+                <p className="font-medium text-primary">minasegirma40@gmail.com</p>
               </div>
               <div>
                 <span className="text-sm text-muted-foreground">Availability</span>
