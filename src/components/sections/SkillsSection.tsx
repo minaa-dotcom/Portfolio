@@ -107,28 +107,7 @@ export const SkillsSection = () => {
           </motion.div>
         </div>
 
-        {/* Additional skills icons */}
-        <AnimatedSection delay={0.3} className="mt-16">
-          <p className="text-center text-muted-foreground mb-6">
-            Other technologies I work with
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {["GraphQL", "Redux", "Jest", "Webpack", "Sass", "Firebase", "Vercel", "Supabase"].map(
-              (tech, index) => (
-                <motion.span
-                  key={tech}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.5 + index * 0.05 }}
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  className="px-4 py-2 rounded-full bg-secondary text-sm text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors cursor-default"
-                >
-                  {tech}
-                </motion.span>
-              )
-            )}
-          </div>
-        </AnimatedSection>
+      
       </div>
     </section>
   );

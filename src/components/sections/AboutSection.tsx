@@ -5,10 +5,10 @@ import { Code2, Coffee, Rocket, Users } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const stats = [
-  { icon: Code2, value: "50+", label: "Projects Completed" },
-  { icon: Coffee, value: "1000+", label: "Cups of Coffee" },
+  { icon: Code2, value: "15+", label: "Projects Completed" },
+  { icon: Coffee, value: "500+", label: "Cups of Coffee" },
   { icon: Users, value: "30+", label: "Happy Clients" },
-  { icon: Rocket, value: "3+", label: "Years Experience" },
+  { icon: Rocket, value: "2+", label: "Years Experience" },
 ];
 
 export const AboutSection = () => {

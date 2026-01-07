@@ -4,38 +4,22 @@ import { SectionHeading } from "../SectionHeading";
 import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 
 const experiences = [
-  {
-    type: "work",
-    title: "Software Development Intern",
-    organization: "Tech Company Inc.",
-    period: "Jun 2024 - Present",
-    description:
-      "Working on full-stack web applications using React and Node.js. Collaborated with cross-functional teams to deliver features on time.",
-    highlights: ["React", "Node.js", "Agile"],
-  },
+  
   {
     type: "education",
-    title: "Bachelor of Science in Computer Science",
-    organization: "University Name",
+    title: "Bachelor of Science in software engineering",
+    organization: "Haramaya University",
     period: "Sep 2021 - May 2025",
     description:
-      "Pursuing a degree in Computer Science with a focus on software engineering and web technologies. GPA: 3.8/4.0",
+      "Pursuing a degree in software engineering  with a focus on Mobile Applications and web technologies.",
     highlights: ["Data Structures", "Algorithms", "Web Development"],
   },
-  {
-    type: "work",
-    title: "Freelance Web Developer",
-    organization: "Self-employed",
-    period: "Jan 2023 - Jun 2024",
-    description:
-      "Developed and maintained websites for small businesses. Focused on responsive design and performance optimization.",
-    highlights: ["WordPress", "JavaScript", "SEO"],
-  },
+  
   {
     type: "education",
     title: "Full-Stack Web Development Bootcamp",
     organization: "Coding Academy",
-    period: "Jun 2022 - Sep 2022",
+    period: "Jun 2024 - Sep 2024",
     description:
       "Intensive 12-week program covering modern web development technologies and best practices.",
     highlights: ["MERN Stack", "REST APIs", "Deployment"],
