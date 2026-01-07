@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bold Purple/Violet Portfolio Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 270 50% 10%;
+
+    --card: 270 30% 98%;
+    --card-foreground: 270 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 50% 10%;
+
+    --primary: 270 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 30% 94%;
+    --secondary-foreground: 270 50% 20%;
+
+    --muted: 270 20% 95%;
+    --muted-foreground: 270 15% 45%;
+
+    --accent: 280 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 270 20% 90%;
+    --input: 270 20% 90%;
+    --ring: 270 70% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom purple gradient colors */
+    --gradient-start: 270 80% 60%;
+    --gradient-mid: 280 75% 55%;
+    --gradient-end: 300 70% 50%;
+
+    /* Glow effects */
+    --glow-primary: 270 100% 65%;
+    --glow-accent: 280 100% 70%;
+
+    --sidebar-background: 270 30% 98%;
+    --sidebar-foreground: 270 50% 20%;
+    --sidebar-primary: 270 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 30% 94%;
+    --sidebar-accent-foreground: 270 50% 20%;
+    --sidebar-border: 270 20% 90%;
+    --sidebar-ring: 270 70% 55%;
+  }
+
+  .dark {
+    --background: 270 30% 6%;
+    --foreground: 270 20% 95%;
+
+    --card: 270 30% 10%;
+    --card-foreground: 270 20% 95%;
+
+    --popover: 270 30% 8%;
+    --popover-foreground: 270 20% 95%;
+
+    --primary: 270 80% 65%;
+    --primary-foreground: 270 30% 6%;
+
+    --secondary: 270 30% 15%;
+    --secondary-foreground: 270 20% 90%;
+
+    --muted: 270 25% 15%;
+    --muted-foreground: 270 15% 60%;
+
+    --accent: 280 85% 65%;
+    --accent-foreground: 270 30% 6%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 25% 18%;
+    --input: 270 25% 18%;
+    --ring: 270 80% 65%;
+
+    /* Custom purple gradient colors - dark mode */
+    --gradient-start: 270 85% 65%;
+    --gradient-mid: 280 80% 60%;
+    --gradient-end: 300 75% 55%;
+
+    /* Glow effects - dark mode */
+    --glow-primary: 270 100% 70%;
+    --glow-accent: 280 100% 75%;
+
+    --sidebar-background: 270 30% 8%;
+    --sidebar-foreground: 270 20% 90%;
+    --sidebar-primary: 270 80% 65%;
+    --sidebar-primary-foreground: 270 30% 6%;
+    --sidebar-accent: 270 30% 15%;
+    --sidebar-accent-foreground: 270 20% 90%;
+    --sidebar-border: 270 25% 18%;
+    --sidebar-ring: 270 80% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Gradient text utility */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+
+  /* Animated gradient text */
+  .gradient-text-animated {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% center;
+    }
+    50% {
+      background-position: 100% center;
+    }
+  }
+
+  /* Glow effects */
+  .glow {
+    box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.4),
+                0 0 40px hsl(var(--glow-primary) / 0.2),
+                0 0 60px hsl(var(--glow-primary) / 0.1);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px hsl(var(--glow-accent) / 0.4),
+                0 0 40px hsl(var(--glow-accent) / 0.2);
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+  }
+
+  .glass-strong {
+    @apply bg-card/90 backdrop-blur-2xl border border-border/60;
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Pulse glow animation */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--glow-primary) / 0.6),
+                  0 0 60px hsl(var(--glow-primary) / 0.3);
+    }
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--primary) / 0.1),
+      transparent
+    );
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    100% {
+      left: 100%;
+    }
+  }
+}
