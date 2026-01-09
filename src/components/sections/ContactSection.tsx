@@ -6,15 +6,15 @@ import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from "lucide-rea
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@example.com", href: "mailto:hello@example.com" },
-  { icon: Phone, label: "Phone", value: "+1 (123) 456-7890", href: "tel:+11234567890" },
-  { icon: MapPin, label: "Location", value: "Your City, Country", href: "#" },
+  { icon: Mail, label: "Email", value: "minasegirma40@gmail.com", href: "mailto:hello@example.com" },
+  { icon: Phone, label: "Phone", value: "+251909701943", href: "tel:+251909701943" },
+  { icon: MapPin, label: "Location", value: "Maya, Ethiopia", href: "#" },
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/minaa-dotcom" },
+  { icon: Linkedin, label: "LinkedIn", href: "linkedin.com/in/minase-girma-787292376" },
+  { icon: Twitter, label: "Instagram", href: "#" },
 ];
 
 export const ContactSection = () => {
@@ -129,7 +129,7 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-                    placeholder="John Doe"
+                    placeholder="john"
                   />
                 </div>
                 <div className="space-y-2">
