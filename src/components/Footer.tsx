@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+   { icon: Github, label: "GitHub", href: "https://github.com/minaa-dotcom" },
+  { icon: Linkedin, label: "LinkedIn", href: "linkedin.com/in/minase-girma-787292376" },
   { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
 ];
 
@@ -78,7 +78,7 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Minase Girma. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-primary fill-primary" /> using React

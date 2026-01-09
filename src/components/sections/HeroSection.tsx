@@ -99,7 +99,7 @@ export const HeroSection = () => {
             {[
               { icon: Github, href: "https://github.com", label: "GitHub" },
               { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+              { icon: Mail, href: "minasegirma40@gmail.com", label: "Email" },
             ].map((social) => (
               <motion.a
                 key={social.label}

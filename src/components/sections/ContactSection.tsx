@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "../AnimatedSection";
 import { SectionHeading } from "../SectionHeading";
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter,Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
@@ -14,7 +14,8 @@ const contactInfo = [
 const socialLinks = [
   { icon: Github, label: "GitHub", href: "https://github.com/minaa-dotcom" },
   { icon: Linkedin, label: "LinkedIn", href: "linkedin.com/in/minase-girma-787292376" },
-  { icon: Twitter, label: "Instagram", href: "#" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/yourusername" }
+
 ];
 
 export const ContactSection = () => {
