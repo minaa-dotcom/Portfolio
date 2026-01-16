@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const socialLinks = [
-   { icon: Github, label: "GitHub", href: "https://github.com/minaa-dotcom" },
-  { icon: Linkedin, label: "LinkedIn", href: "linkedin.com/in/minase-girma-787292376" },
+  { icon: Github, href: "https://github.com", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
 ];
 
@@ -26,10 +27,10 @@ export const Footer = () => {
           <div className="space-y-4">
             <motion.a
               href="#home"
-              className="text-2xl font-bold gradient-text inline-block"
               whileHover={{ scale: 1.05 }}
+              className="inline-block"
             >
-              {"<Dev />"}
+              <img src={logo} alt="MG Logo" className="h-10 w-auto" />
             </motion.a>
             <p className="text-muted-foreground text-sm max-w-xs">
               Passionate developer crafting beautiful and functional web experiences.
@@ -78,7 +79,7 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Minase Girma. All rights reserved.
+            © {new Date().getFullYear()} Your Name. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-primary fill-primary" /> using React
